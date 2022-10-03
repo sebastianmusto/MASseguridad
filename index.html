@@ -9,14 +9,14 @@
     <!-- <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png"> -->
 
-    <link rel="stylesheet" href="css/colorbox.css">
+    <!-- <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.css"> -->
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/06b1777b59.js" crossorigin="anonymous"></script>
     <!--GOOGLE FONTS-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,124 +33,104 @@
 </head>
 
 <body>
-    <!--BARRA MENU Y LOGO-->
+    <!--CONTENEDOR GRANDE GRID-->
+    <div class="contenedor">
 
-    <div class="barra">
+        <!--BARRA MENU Y LOGO-->
+        <!-- LOGO IZQ-->
+        <header class="header">
 
-        <div class="contenedor clearfix">
-
-            <div class="logo">
-                <a href="index.html">
-                    <p><i class="fa-solid fa-unlock-keyhole"></i>  <span>MÁS</span> seguridad</p>
-                </a>
-            </div>
-
-            <div class="menu-movil">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <nav class="navegacion-principal clearfix redes-sociales">
-                <a href="#">Información</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Blog</a>
-
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-
-                <a class="boton-secundario" href="contacto.html">Contactanos!</a>
-
-
+              <nav class="navegacion-principal">
+                <div class="logo">
+                    <a href="index.html"><p><i class="fa-solid fa-unlock-keyhole"></i> <span>MÁS</span> seguridad</p></a>
+                </div>
+    
+                <ul class="enlaces-menu">
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="boton-principal href="contacto.html">Contactanos!</a></li>
+                </ul>
+    
+                <button class="ham" type="button">   
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span>
+                </button>                       
             </nav>
 
+        </header>
 
-        </div>
-        <!--contenedor-->
 
-        <header class="site-header">
-            <div class="hero">
-                <div class="contenido-header">
-
-                    <div class="informacion-empresa clearfix contenedor2_3">
-
-                        <h1 class="nombre-sitio">SOMOS<br><span>MAS</span>seguridad</h1>
-
-                        <p class="slogan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus pariatur
-                            temporibus tenetur ipsum cupiditate facilis repellat amet dolores dignissimos ipsam, beatae
-                            in quidem accusamus natus eaque unde sequi assumenda error?
-                            Natus, facere minima mollitia esse, sint rerum, maxime nulla impedit dicta vero sunt saepe?
-                            Distinctio, perferendis assumenda aspernatur ut saepe itaque? Facilis libero sed quisquam
-                            tempora, voluptatum illum odit ullam.
-                        </p>
-                    </div>
-
-                    <div class="contenedor1_3">
-
-                        <a href="#" class="boton-principal hollow">Quiero saber más</a>
-
-                        <div class="imagen_principal">
-                            <img src="img/ImagenPrincipal.png" alt="Imagen_principal">
-                        </div>
-                    </div>
-
+        <div class="hero">
+            <div class="contenido-header">
+                <div class="info-empresa">
+                    <h1 class="nombre-sitio">ACERCA DE<br><span>MÁS</span>seguridad</h1>
+                    <p class="slogan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus pariatur
+                        temporibus tenetur ipsum cupiditate facilis repellat amet dolores dignissimos ipsam, beatae
+                        in quidem accusamus natus eaque unde sequi assumenda error?
+                        Natus, facere minima mollitia esse, sint rerum, maxime nulla impedit dicta vero sunt saepe?
+                        Distinctio, perferendis assumenda aspernatur ut saepe itaque? Facilis libero sed quisquam
+                        tempora, voluptatum illum odit ullam.</p>
                 </div>
-
-
+                <a href="#" class="boton-principal">Quiero saber más</a>
             </div>
-            <!--Informacion del evento-->
-    </div>
-    <!--.hero-->
 
-    </header>
+            <div class="imagen_principal">
+                <img src="img/ImagenPrincipal.png" alt="Imagen_principal">
+            </div>
+        </div>
+    <!--.site-info-->
 
+    <section class="mision">
 
-
-    </div>
-    <!--barra-->
-
-    <section class="contenedor clearfix">
-        
         <div class="nuestro-aporte">
 
-        <h2>Nuestro <span>aporte</span></h2>
-        <p>
-            Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut
-            bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci.
-            Maecenas luctus mi at ex blandit vehicula.
-            Morbi porttitor tempus euismod.
-        </p>
-        <a href="#" class="boton-principal button transparente hollow">Contactanos!</a>
+            <h2>Nuestro <span>aporte</span></h2>
+            <p>
+                Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et.
+                Ut
+                bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue
+                orci.
+                Maecenas luctus mi at ex blandit vehicula.
+                Morbi porttitor tempus euismod.
+            </p>
+            <a href="#" class="boton-principal button transparente hollow">Contactanos!</a>
         </div>
 
-        <div class="contenedor-aportes">
+        <div class="aportes">
 
             <div class="aporte">
                 <img src="/img/Difusion.png" alt="grafico_difusion">
                 <h3>Difusión</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry</p>
             </div>
 
             <div class="aporte">
                 <img src="/img/Capacitacion.png" alt="grafico_capacitacion">
                 <h3>Capacitación</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry</p>
             </div>
 
             <div class="aporte">
                 <img src="/img/Soporte.png" alt="grafico_soporte">
                 <h3>Soporte</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry</p>
             </div>
         </div>
     </section>
 
 
 
-    <section class="Categorias contenedor seccion">
+    <section class="categorias">
         <h2>Categorias</h2>
-        <ul class="lista-categorias clearfix">
+        <ul class="lista-categorias">
             <li>
                 <div class="categoria">
                     <img src="/img/Phishing.png" alt="Phishing">
@@ -190,108 +170,112 @@
         </ul>
 
     </section>
-    <!-- invitados-->
+    <!-- categorias-->
 
 
-    <section class="precios-seccion">
+    <section class="charlas">
         <h2>Próximos eventos</h2>
-        <div class="contenedor">
-            <ul class="lista-eventos clearfix">
-                <!--clearfix cada vez que flotamos algo-->
+        <div class="eventos">
+            <ul class="lista-eventos">
                 <li>
                     <div class="tabla-evento">
                         <img src="/img/charla1.png" alt="">
+                        <p class="tag-phishing">Phishing</p>
                         <h3>Charla "Fundamentos de ciberseguridad"</h3>
-                        <p class="categoria1">Phishing</p>
                         <ul>
                             <li>Gratis</li>
                             <li>10:00hs</li>
                             <li>30 Oct 2022</li>
                         </ul>
-                        <a href="#" class="button hollow">Más info</a>
+                        <a href="#" class="boton-principal">Más info</a>
                     </div>
                 </li>
 
                 <li>
                     <div class="tabla-evento">
                         <img src="/img/charla2.png" alt="">
+                        <p class="tag-vishing">Vishing</p>
                         <h3>Charla "Ciberseguridad - Modulo 2"</h3>
-                        <p class="categoria2">Vishing</p>
                         <ul>
                             <li>Gratis</li>
                             <li>10:00hs</li>
                             <li>30 Oct 2022</li>
                         </ul>
-                        <a href="#" class="button hollow">Más info</a>
+                        <a href="#" class="boton-principal">Más info</a>
                     </div>
                 </li>
 
                 <li>
                     <div class="tabla-evento">
                         <img src="/img/charla3.png" alt="">
+                        <p class="tag-clonacion">Clonación</p>
                         <h3>Charla "Que hacer ante el robo de identidad?"</h3>
-                        <p class="categoria1">Clonación</p>
                         <ul>
                             <li>Gratis</li>
                             <li>10:00hs</li>
                             <li>30 Oct 2022</li>
                         </ul>
-                        <a href="#" class="button hollow">Más info</a>
+                        <a href="#" class="boton-principal">Más info</a>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
-<!-- ULTIMO EN EL BLOG-->
 
-    <section class="seccion">
+
+    <!-- ULTIMO EN EL BLOG-->
+
+    <section class="blog">
         <h2>Lo <span>último</span> en nuestro Blog</h2>
-        <div class="articulos contenedor clearfix">
-            <div class="articulo">
-                <blockquote>
-                    <h4>Phishing, como prevenirlo?</h4>
-                    <p>Corporis eveniet ad nam totam placeat quibusdam nesciunt excepturi iure, nobis repellat animi,
-                        voluptates libero facilis voluptatem, suscipit. Fugiat nam, hic alias.</p>
-                    <footer class="info-articulo clearfix">
-                        <img src="img/Escritor1.jpg" alt="imagen articulo">
-                        <cite>German Sanchez<span>Analista de seguridad</span></cite>
-                    </footer>
-                </blockquote>
-            </div>
-            <!--ARTICULO -->
-            <div class="articulo">
-                <blockquote>
-                    <h4>Phishing, como prevenirlo?</h4>
-                    <p>Corporis eveniet ad nam totam placeat quibusdam nesciunt excepturi iure, nobis repellat animi,
-                        voluptates libero facilis voluptatem, suscipit. Fugiat nam, hic alias.</p>
-                    <footer class="info-articulo clearfix">
-                        <img src="img/Escritor1.jpg" alt="imagen articulo">
-                        <cite>Maria Garcia <span>Consultora</span></cite>
-                    </footer>
-                </blockquote>
-            </div>
-            <!--ARTICULO -->
-            <div class="articulo">
-                <blockquote>
-                    <h4>Phishing, como prevenirlo?</h4>
-                    <p>Corporis eveniet ad nam totam placeat quibusdam nesciunt excepturi iure, nobis repellat animi,
-                        voluptates libero facilis voluptatem, suscipit. Fugiat nam, hic alias.</p>
-                    <footer class="info-articulo clearfix">
-                        <img src="img/Escritor1.jpg" alt="imagen articulo">
-                        <cite>Javier Martinez <span>Especialista en Ciberseguridad</span></cite>
-                    </footer>
-                </blockquote>
+        <div class="articulos">
+                <div class="articulo">
+                    <blockquote>
+                        <h4>Phishing, como prevenirlo?</h4>
+                        <p>Corporis eveniet ad nam totam placeat quibusdam nesciunt excepturi iure, nobis repellat
+                            animi,
+                            voluptates libero facilis voluptatem, suscipit. Fugiat nam, hic alias.</p>
+                        <footer class="info-articulo">
+                            <img src="img/Escritor1.jpg" alt="imagen articulo">
+                            <cite>German Sanchez<span>Analista de seguridad</span></cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <!--ARTICULO -->
+                <div class="articulo">
+                    <blockquote>
+                        <h4>Phishing, como prevenirlo?</h4>
+                        <p>Corporis eveniet ad nam totam placeat quibusdam nesciunt excepturi iure, nobis repellat
+                            animi,
+                            voluptates libero facilis voluptatem, suscipit. Fugiat nam, hic alias.</p>
+                        <footer class="info-articulo">
+                            <img src="img/Escritor1.jpg" alt="imagen articulo">
+                            <cite>Maria Garcia <span>Consultora</span></cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <!--ARTICULO -->
+                <div class="articulo">
+                    <blockquote>
+                        <h4>Phishing, como prevenirlo?</h4>
+                        <p>Corporis eveniet ad nam totam placeat quibusdam nesciunt excepturi iure, nobis repellat
+                            animi,
+                            voluptates libero facilis voluptatem, suscipit. Fugiat nam, hic alias.</p>
+                        <footer class="info-articulo">
+                            <img src="img/Escritor1.jpg" alt="imagen articulo">
+                            <cite>Javier Martinez <span>Especialista en Ciberseguridad</span></cite>
+                        </footer>
+                    </blockquote>
             </div>
             <!--ARTICULO -->
         </div>
         <!--Contenedor ARTICULOS-->
 
     </section>
-    <div class="newsletter parallax">
-        <div class="contenido contenedor">
+    <div class="newsletter">
+        <div class="contenido">
             <p>Regístrate al Newsletter</p>
             <h3><span>MÁS</span>seguridad</h3>
-            <a href="#" class="button transparente">Registro</a>
+            <a href="#" class="boton-transparente">Registro</a>
         </div>
         <!--Contenido-->
     </div>
@@ -299,34 +283,28 @@
 
 
     <!--Footer-->
-    <footer class="site-footer">
-        <div class="contenedor clearfix">
+    <footer class="footer">
+        <div class="contenidofooter">
             <div class="footer-informacion">
                 <h3>Sobre <span>MÁS</span>seguridad</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, illum.</p>
             </div>
-            <!-- <div class="ultimos-tweets">
-                <h3>Últimos <span>tweets</span></h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                </ul>
-            </div>
-            -->
-            <!-- ultimos tweets -->
+
             <div class="menu">
-                <h3>Redes <span>Sociales</span></h3>
+                <h3>Redes <br> <span>Sociales</span></h3>
                 <nav class="redes-sociales">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
-                    </nav>
-            </div> -->
+                </nav>
+            </div>
             <!-- menu -->
         </div>
         <p class="copyright"><span>MÁS</span>seguridad2022 | by <a href="">CaC2022</a></p>
     </footer>
+
+    </div>
+    <!--CONTENEDOR GRANDE-->
 
 
     <!-- *****SCRIPTS***** -->
