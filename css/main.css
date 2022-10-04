@@ -193,7 +193,15 @@ span {
     border-radius: 10px;
 }
 
-
+.boton-transparente{
+  font-family:'Lato', sans-serif; ;
+  color: white;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  padding: 10px 50px;
+  border-radius: 10px;
+  text-decoration: none;}
+  
 .boton-principal:hover,
 .boton-secundario:hover  {
     background-color: transparent;
@@ -203,14 +211,6 @@ span {
     border-radius: 10px;
 }
 
-.boton-transparente{  
-  font-family:'Lato', sans-serif; ;
-  color: white;
-  background: transparent;
-  border: 2px solid #FFFFFF;
-  padding: 10px 50px;
-  border-radius: 10px;
-  text-decoration: none;}
 
 .tag-clonacion, .tag-phishing {
   justify-content: center;
@@ -290,6 +290,8 @@ span {
   margin-right: 10px;
   transition: all .6s ease;
 }
+ul.enlaces-menu{
+}
 
 ul.enlaces-menu a:last-child {
     margin-right: 0;}
@@ -310,13 +312,12 @@ ul.enlaces-menu a:last-child {
       padding: 10px 10px;
       display: inline-block;
       width: auto;
-      display: inline-block;
-      text-align: center;
+      text-align: right;
+      align-items: center;
+      align-content: center;
       margin: 0 5px 0 0;
   }
 }
-
-/*-----EXTRACTO-----*/
 
   nav{
       display: flex;
@@ -351,7 +352,9 @@ ul.enlaces-menu a:last-child {
   .enlaces-menu li{
       padding: 0 10px;
       list-style-type: none;
-      transition: 0.3s;}
+      transition: 0.3s;
+      align-items: center;
+    }
 
   .enlaces-menu li a{
       text-decoration: none;
@@ -365,20 +368,26 @@ ul.enlaces-menu a:last-child {
       text-align: center;
       margin-bottom: 20px;
       clear: both;
+      align-items: center;
+
   }
-  .enlaces-menu li:hover{
+  .enlaces-menu li :hover{
 
       color: white;
       background-color:var(--main-first-color);
       border-radius: 20px;
   }
+  /* .enlaces-menu li:last-child{
+    color: white;
+  }
+
   .enlaces-menu li:last-child :hover{
     background-color: transparent;
     box-shadow:none;
     border: 2px solid var(--main-fourth-color);
     color: var(--main-fourth-color);
     border-radius: 10px;
-}
+  } */
 
 /*-----MOBILE (desaparece menu )----*/
 @media (max-width:768px) {
@@ -519,6 +528,13 @@ div.imagen_principal {
   font-weight: bold;
   margin: 10px;
 }
+
+.aporte p {
+  margin: 10px 10px;
+  font-size: 0.8em;
+  text-justify: inherit;
+}
+
 .aporte{
   text-align: center;
   border: 3px solid var(--main-third-color);
@@ -531,7 +547,7 @@ div.imagen_principal {
 
 @media only screen and (min-width:768px) {
 .mision{
-  margin: 0;
+  margin: 60px 0;
 }
 .nuestro-aporte{
   margin-top: 50px;
@@ -541,7 +557,7 @@ div.imagen_principal {
 }
 .aporte{
   margin: 0 10px 0 0 ;
-  padding: 0 10px 0px 0px;}
+  padding: 50px 10px 0px 0px;}
 }
 
 /*-----CATEGORIAS-----*/
@@ -582,7 +598,8 @@ ul.lista-categorias li:last-child {
 @media only screen and (min-width: 768px) {
   ul.lista-categorias li {
       width: 90%;
-      align-items: center;}
+      align-items: center;
+      min-height: 50vh}
 }
 .categoria {
   position: relative;
@@ -628,11 +645,13 @@ div.categoria img:hover {
 .charlas{
   width: 100%;
 }
+div.tabla-evento{
+  min-height: 50px;
+}
 
 ul.lista-eventos>li {
-
   list-style-type: none;
-  padding: 10px;}
+  }
 
 .tabla-evento {
   border: 1px solid var(--main-third-color);
@@ -694,7 +713,7 @@ ul.lista-eventos>li {
   padding: 10px 10px;
   margin-left: 20px;
  }
- 
+
 }
 
 /*****ARTICULOS****/
