@@ -1,11 +1,15 @@
 :root {
-    --main-first-color: rgb(255, 159, 83);
-    --main-second-color: rgb(64, 2, 79);
+    --main-first-color: rgb(250, 199, 152);
+    --main-second-color:rgb(193, 186, 240);
     --main-third-color: rgba(218, 218, 218, 0.548);
-    --main-fourth-color:rgb(254, 73, 24);
+    --main-fourth-color:rgb(162, 149, 247);
     --main-first-backround:rgb(245,249,252);
   }
 
+  body{
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    background-color: ghostwhite;
+}
 .header {
     display: flex;
     justify-content: space-around;
@@ -14,61 +18,61 @@
 
 /* Header - Logo */
 .header-logo {
-    width: 33%;
-    text-align: center;
+   padding: 10px;
+    width: 40%;
+    text-align:right;
 }
-
-
 .header-logo h1 {
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 300;
-    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 12px;
 }
 .logo {
-    width: 40%;
+    width: 50%;
+    
 }
+/* Header - Social */
 .social-media {
     display: flex;
     justify-content: space-between;
     width: 12%;
 }
 .social-media i {
-    color:var(--main-second-color);
+    color: #b2b2b2;
     font-size: 20px;
     transition: color 0.25s;
 }
 .social-media i:hover {
-    color:var(--main-second-color);
-}
-.header-contact  {
-    color:var(--main-fourth-color) ;
-    font-size: 20px;
-    font-weight: bold;
-
+    color: #000;
 }
 
+/* Header - Contact */
+.header-contact a {
+    color: #b2b2b2;
+    text-align:right;
+    text-decoration: none;
+    padding: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: color 0.25s;
+}
+.header-contact a:hover {
+    color: #000;
+}
 .nav {
-    margin: 20px 0;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    color:black; 
-    font-size: 16px; 
-    font-weight: 200; 
-    text-align: center; 
-    background-color:rgb(148, 71, 148);
-    opacity: 0.8;
-     
-   
+    margin: 30px 10px;
+    font-size: 16px;
+    font-weight:200;
+    text-align: center;
+    background-color:rgb(193, 186, 240) ;
+    opacity:0.8;
     padding: 10px; 
     border-radius: 25px 0px 25px 0px; 
     -moz-border-radius: 25px 0px 25px 0px; 
     -webkit-border-radius: 25px 0px 25px 0px; 
-    border: 2px ;
-   
-     
-    
-    }
-
+    border: 4px ;
+}
 .nav ul {
     display: flex;
     text-align: center;
@@ -76,19 +80,19 @@
 }
 .nav li {
     list-style: none;
-    
-    }
+}
 .nav a {
     text-decoration: none;
-    color:black;
+    padding: 20px;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 13px;
     transition: color 0.25s;
-    font-weight: bold;
-
 }
-
+.nav a:hover {
+    color: #000;
+}
 
 
 
@@ -96,30 +100,70 @@
 /************/
 /***FOOTER***/
 /************/
-.footer {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 60px;
-}
-.social-footer {
-    display: flex;
-    justify-content: space-evenly;
+.pie-pagina{
     width: 100%;
-    padding: 15px;
+    background-color:rgb(249, 212, 177);
 }
-.social-footer i {
-    color: var(--main-second-color);
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+    background-color:rgb(249, 212, 177) ;
+}
+.pie-pagina .grupo-1 .box h2{
+    color:black;
+    margin-bottom: 25px;
     font-size: 20px;
 }
-.footer p {
-    padding: 15px;
+.pie-pagina .grupo-1 .box p{
+    color:black;
+    margin-bottom: 9px;
 }
-.footer a {
-    padding: 15px;
-    color: VAR(--main-second-color);
-    font-size: 20px;
-    letter-spacing: 2px;
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    margin-right: 10px;
+    background-color:rgb(193, 186, 240) ;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: violet;
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(193, 186, 240);
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:700px){
+    .pie-pagina .grupo-1{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
 
 
@@ -132,7 +176,7 @@
     width: 90%;
 }
 .menu h3 {
-    border-top: 3px solid var(--main-second-color);
+    border-top: 3px solid rgb(193, 186, 240);
     text-transform: uppercase;
     border-bottom: 1px solid var(--main-fourth-color);
     padding: 20px;
@@ -157,27 +201,28 @@
 /*****************************************************************************************************************************************/
 /*****************************************************************************************************************************************/
 .contacto {
-    background-color:navajowhite;
+    background-color:rgb(240, 236, 236);
     opacity: 0.8;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 .contacto h2 {
     color:var(--main-fourth-color); 
-    font-size: 60px;
-    letter-spacing: 4px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
     text-align: center;
-
-}
+   }
 .contacto p {
     color:black;
+    opacity: 0.8;
     font-size: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .contacto-form label {
-    margin: 30 px;
+    margin: 20 px;
     font-weight: bold;
-    color: var(--main-second-color);
+    color:var(--main-fourth-color);
     letter-spacing: 1px;
 }
 .contacto-form input {
@@ -197,10 +242,9 @@
     height: 45px;
     border: none;
     border-radius: 10px;
-    background-color:var(--main-first-color);
+    background-color:rgb(193, 186, 240);
     margin-top: 15px;
-    color:var(--main-second-color);
-    
+    color:rgb(224, 141, 241);
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
