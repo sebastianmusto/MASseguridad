@@ -211,6 +211,7 @@ form button:hover{
 .pie-pagina{
     width: 100%;
     background-color:rgb(249, 212, 177);
+    margin: 30px 5px;
 }
 .pie-pagina .grupo-1{
     width: 100%;
