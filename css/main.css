@@ -17,7 +17,6 @@ html {
 body {
     background-color: #ffffff;}
 
-
 /*-----LETTERING-----*/
   :root {
     --main-first-color: rgb(255, 159, 83);
@@ -56,6 +55,7 @@ span {
 
   @media only screen and (min-width: 480px) {
     .contenedor {
+      /* border: 3px solid red; */
       width: 90%;
       margin: auto;
     }
@@ -88,7 +88,7 @@ span {
     .hero {
         grid-area: hero;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;}
 
     .mision {
@@ -291,6 +291,7 @@ span {
   transition: all .6s ease;
 }
 ul.enlaces-menu{
+  color: white;
 }
 
 ul.enlaces-menu a:last-child {
@@ -482,20 +483,105 @@ ul.enlaces-menu a:last-child {
 div.imagen_principal {
   width:300px;
   margin: 50px auto auto auto;
- }
 
+ }
+/*     */
+    /* Slideshow container */
+    .slideshow-container {
+      object-fit: cover;
+      max-width: 1100px;
+      position: relative;
+      margin: auto;
+      border-radius: 5px;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+        
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      /* position: absolute; */
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
 
  @media only screen and (min-width:768px) {
   .contenido-header{
+
     margin: 30px 30px 30px 30px;
-    width:60%;
+    width: 50%;
+    position: relative /*PADRE RELATIVE*/
    }
+
+   .info-empresa{
+    float: left;    
+    padding: 30px 15px;
+    text-align: justify;
+   }
+  
    .imagen_principal{
-    position: relative;
-    display:flex;
-    align-items:center;
-    width: 30%;
-   }
+    position:absolute; /*position HIJO ABSOLUTE*/
+    top: 90px;
+    left: 650px;}
 
  }
 
