@@ -122,7 +122,15 @@ span {
         "lista-categorias lista-categorias lista-categorias"
       grid-area: lista-categorias; }
 
-    /* .charlas {
+    .contenedor_consejos {  
+        width: 90%;
+        max-width: 1100px;
+        margin: 20px auto;
+        display: grid;
+        
+
+    }
+    .charlas {
       grid-area: charlas;
       display: grid;
       grid-template-columns: 1fr;
@@ -130,11 +138,11 @@ span {
       gap: 0px 0px;}
 
     .blog {
-      grid-area: blog;
+      width: 80%;
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 0.8fr;
-      gap: 0px 0px;}
+      gap: 0px 0px;
+      grid-area: blog;
+    }
 
     .articulos {
       display: grid;
@@ -143,15 +151,14 @@ span {
       gap: 0px 0px;
       grid-template-areas:
         "articulos articulos articulos"
-      grid-area: articulos;
+      grid-area: contenedor_consejos;
     }
 
+.newsletter {
+      grid-area: newsletter; }
 
-    .newsletter {
-      grid-area: newsletter; } */
-
-    /* .footer {
-      grid-area: footer; } */
+.footer {
+      grid-area: footer; }
 
   }
 
