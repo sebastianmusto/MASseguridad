@@ -126,7 +126,7 @@ span {
       grid-template-areas:
         "lista-categorias lista-categorias lista-categorias"
         "lista-categorias lista-categorias lista-categorias"
-      grid-area: lista-categorias;}
+      grid-area: lista-categorias; }
 
     .charlas {
       grid-area: charlas;
@@ -807,6 +807,7 @@ ul.lista-eventos>li {
 
 .articulos {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .articulo {

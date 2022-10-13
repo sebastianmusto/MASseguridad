@@ -9,14 +9,13 @@
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/06b1777b59.js" crossorigin="anonymous"></script>
     <!--GOOGLE FONTS-->
-    <link rel="stylesheet" href="/css/main.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
     <meta name="theme-color" content="#fafafa">
-
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/CSS_Formulario.CSS" />
 
     <title>MASseguridad</title>
     <link rel="icon" type="apple-touch-icon" href="/favicon.ico">
@@ -30,9 +29,9 @@
 
         <!--BARRA MENU Y LOGO-->
         <!-- LOGO IZQ-->
-        <header class="header">
+        <header class="header" id="idheader">
 
-            <nav class="navegacion-principal">
+            <!--             <nav class="navegacion-principal">
                 <div class="logo">
                     <a href="index.html">
                         <p><i class="fa-solid fa-unlock-keyhole"></i> <span>MÁS</span> seguridad</p>
@@ -55,7 +54,7 @@
                     <span class="br-3"></span>
                 </button>
             </nav>
-
+ -->
         </header>
 
 
@@ -64,7 +63,10 @@
                 <div class="contenido-header">
                     <div class="info-empresa">
                         <h1 class="nombre-sitio">ACERCA DE<br><span>MÁS</span>seguridad</h1>
-                        <p class="slogan">Somos una organizacion que tiene como objetivo difundir informacion relacionada a la ciberseguridad. Nuestro objetivo es brindar informacion gratuita, ya sea mediante charlas, capacitaciones y/o articulos web. Te invitamos a suscribirte a nuestro newsletter y estar atento a las novedades!</p>
+                        <p class="slogan">Somos una organizacion que tiene como objetivo difundir informacion
+                            relacionada a la ciberseguridad. Nuestro objetivo es brindar informacion gratuita, ya sea
+                            mediante charlas, capacitaciones y/o articulos web. Te invitamos a suscribirte a nuestro
+                            newsletter y estar atento a las novedades!</p>
                     </div>
                     <a href="#" class="boton-principal">Quiero saber más</a>
                 </div>
@@ -106,95 +108,77 @@
 
 
 
-    <section class="mision">
+        <section class="mision">
 
-        <div class="nuestro-aporte">
+            <div class="nuestro-aporte">
 
-            <h2>Nuestro <span>aporte</span></h2>
-            <p>
-                Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et.
-                Ut
-                bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue
-                orci.
-                Maecenas luctus mi at ex blandit vehicula.
-                Morbi porttitor tempus euismod.
-            </p>
-            <a href="FormularioCAC.html" class="boton-principal button transparente hollow">Contactanos!</a>
-        </div>
-
-        <div class="aportes">
-
-            <div class="aporte">
-                <img src="/img/Difusion.png" alt="grafico_difusion">
-                <h3>Difusión</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                    dummy text of the printing and typesetting industry</p>
+                <h2>Nuestro <span>aporte</span></h2>
+                <p>
+                    Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et.
+                    Ut
+                    bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue
+                    orci.
+                    Maecenas luctus mi at ex blandit vehicula.
+                    Morbi porttitor tempus euismod.
+                </p>
+                <a href="FormularioCAC.html" class="boton-principal button transparente hollow">Contactanos!</a>
             </div>
 
-            <div class="aporte">
-                <img src="/img/Capacitacion.png" alt="grafico_capacitacion">
-                <h3>Capacitación</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                    dummy text of the printing and typesetting industry</p>
+            <div class="aportes">
+
+                <div class="aporte">
+                    <img src="/img/Difusion.png" alt="grafico_difusion">
+                    <h3>Difusión</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry</p>
+                </div>
+
+                <div class="aporte">
+                    <img src="/img/Capacitacion.png" alt="grafico_capacitacion">
+                    <h3>Capacitación</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry</p>
+                </div>
+
+                <div class="aporte">
+                    <img src="/img/Soporte.png" alt="grafico_soporte">
+                    <h3>Soporte</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry</p>
+                </div>
             </div>
-
-            <div class="aporte">
-                <img src="/img/Soporte.png" alt="grafico_soporte">
-                <h3>Soporte</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                    dummy text of the printing and typesetting industry</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
 
-    <section class="categorias">
-        <h2>Categorias</h2>
-        <ul class="lista-categorias">
-            <li>
-                <div class="categoria">
-                    <img src="/img/Phishing.png" alt="Phishing">
-                    <p>Phishing</p>
-                </div>
-            </li>
-            <li>
-                <div class="categoria">
-                    <img src="/img/Vishing.png" alt="Vishing">
-                    <p>Vishing</p>
-                </div>
-            </li>
-            <li>
-                <div class="categoria">
-                    <img src="/img/Clonacion.png" alt="Clonacion">
-                    <p>Clonación</p>
-                </div>
-            </li>
-            <li>
-                <div class="categoria">
-                    <img src="/img/Phishing.png" alt="Phishing">
-                    <p>Phishing</p>
-                </div>
-            </li>
-            <li>
-                <div class="categoria">
-                    <img src="/img/Vishing.png" alt="Vishing">
-                    <p>Vishing</p>
-                </div>
-            </li>
-            <li>
-                <div class="categoria">
-                    <img src="/img/Clonacion.png" alt="Clonacion">
-                    <p>Clonación</p>
-                </div>
-            </li>
-        </ul>
+        <section class="categorias">
+            <h2>Categorias</h2>
+            <ul class="lista-categorias">
+                <li>
+                    <div class="categoria">
+                        <img src="/img/Phishing.png" alt="Phishing">
+                        <p>Phishing</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="categoria">
+                        <img src="/img/Vishing.png" alt="Vishing">
+                        <p>Vishing</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="categoria">
+                        <img src="/img/Clonacion.png" alt="Clonacion">
+                        <p>Clonación</p>
+                    </div>
+                </li>
+            </ul>
 
-    </section>
-    <!-- categorias-->
+        </section>
+        <!-- categorias-->
 
 
-    <!-- <section class="charlas">
+        <!-- <section class="charlas">
         <h2>Próximos eventos</h2>
         <div class="eventos">
             <ul class="lista-eventos">
@@ -244,8 +228,8 @@
     </section> -->
 
 
-    <!-- ULTIMO EN EL BLOG-->
-
+        <!-- ULTIMO EN EL BLOG-->
+        <!-- 
     <section class="blog">
         <h2>Lo <span>último</span> en nuestro Blog</h2> <br><br><br><br>
         <div class="articulos">
@@ -261,7 +245,7 @@
                     </footer>
                 </blockquote>
             </div>
-            <!--ARTICULO -->
+            
             <div class="articulo">
                 <blockquote>
                     <h4>Phishing, como prevenirlo?</h4>
@@ -274,7 +258,7 @@
                     </footer>
                 </blockquote>
             </div>
-            <!--ARTICULO -->
+            
             <div class="articulo">
                 <blockquote>
                     <h4>Phishing, como prevenirlo?</h4>
@@ -287,23 +271,25 @@
                     </footer>
                 </blockquote>
             </div>
-            <!--ARTICULO -->
+            
         </div>
-        <!--Contenedor ARTICULOS-->
+        
 
     </section>
-    <!-- <div class="newsletter">
+ -->
+        <!-- <div class="newsletter">
         <div class="contenido">
             <p>Regístrate al Newsletter</p>
             <h3><span>MÁS</span>seguridad</h3>
             <a href="#" class="boton-transparente">Registro</a>
         </div>
     </div> -->
-    <!--Newsletter-->
+        <!--Newsletter-->
 
 
-    <!--Footer-->
-    <footer class="footer">
+        <!--Footer-->
+        <footer class="footer" id="idfooter">
+            <!--         
         <div class="contenidofooter">
             <div class="footer-informacion">
                 <h3>Sobre <span>MÁS</span>seguridad</h3>
@@ -318,17 +304,17 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </nav>
             </div>
-            <!-- menu -->
+        
         </div>
         <p class="copyright"><span>MÁS</span>seguridad2022 | by <a href="">CaC2022</a></p>
-    </footer>
+ -->
+        </footer>
 
     </div>
-</div>
     <!--CONTENEDOR GRANDE-->
 
 
-    <!-- *****SCRIPTS***** -->
+    <!-- *****SCRIPTS***** --> 
     <script src="js/scripts.js"></script>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -337,6 +323,7 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
+
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
