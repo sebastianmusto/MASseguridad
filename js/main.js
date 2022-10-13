@@ -7,13 +7,14 @@ document.getElementById("idheader").innerHTML = `
 </div>
 
 <ul class="enlaces-menu">
-    <li><a href="/QueHacer.html">Preguntas Frecuentes</a></li>
-    <li><a href="/consejos.html">Consejos</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Preguntas Frecuentes</a></li>
+    <li><a href="#">Consejos</a></li>
     <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
     <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
     <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-    <li><a class="boton-principal" href="Contacto.html">Contactanos!</a></li>
-    </ul>
+    <li><a class="boton-principal href="FormularioCAC">Contactanos!</a></li>
+</ul>
 
 <button class="ham" type="button">   
     <span class="br-1"></span>
