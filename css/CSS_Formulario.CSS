@@ -102,7 +102,7 @@
 /************/
 .pie-pagina{
     width: 100%;
-    background-color:rgb(249, 212, 177);
+    background-color: white;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -141,7 +141,6 @@
     line-height: 40px;
     color: black;
     margin-right: 10px;
-    background-color:rgb(193, 186, 240) ;
     text-align: center;
     transition: all 300ms ease;
 }
@@ -149,7 +148,7 @@
     color: violet;
 }
 .pie-pagina .grupo-2{
-    background-color: rgb(193, 186, 240);
+    background-color: var(--main-third-color);
     padding: 15px 10px;
     text-align: center;
     color: black;
