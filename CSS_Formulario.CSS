@@ -61,7 +61,7 @@
     color: #000;
 }
 .nav {
- margen :  20 px ;
+margin :  20 px ;
     font-size: 16px;
     font-weight:200;
     text-align: center;
@@ -237,7 +237,8 @@
     border:none;
     width: 50%;
 }
-.contacto-form button {
+
+.boton,#b1{
     width: 50%;
     height: 45px;
     border: none;
