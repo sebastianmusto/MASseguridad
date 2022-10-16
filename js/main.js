@@ -7,13 +7,12 @@ document.getElementById("idheader").innerHTML = `
 </div>
 
 <ul class="enlaces-menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Preguntas Frecuentes</a></li>
-    <li><a href="#">Consejos</a></li>
+    <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+    <li><a href="consejos.html">Consejos</a></li>
     <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
     <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
     <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-    <li><a class="boton-principal href="FormularioCAC">Contactanos!</a></li>
+    <li><a href="/Contacto.html" class="boton-principal">Contactanos!</a></li>
 </ul>
 
 <button class="ham" type="button">   
@@ -30,11 +29,9 @@ document.getElementById("idfooter").innerHTML = `
 <div class="pie-pagina">
     <div class="grupo-1">
         <div class="box">
-            <figure>
-                <div class="logo">
-                    <a href="index.html"><p><i class="fa-solid fa-unlock-keyhole"></i> <span>MÁS</span> seguridad</p></a>
-                </div>
-            </figure>
+            <div class="logo">
+            <a href="index.html"><p><i class="fa-solid fa-unlock-keyhole"></i> <span>MÁS</span> seguridad</p></a>
+            </div>
         </div>
         <div class="box">
             <h2>Sobre nosotros</h2>
