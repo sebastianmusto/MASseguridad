@@ -98,6 +98,7 @@ function currentSlide(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   } 
+  
  
 // automatic carousel 
 // let slideIndex = 0;

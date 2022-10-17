@@ -210,6 +210,19 @@ span {
     color: var(--main-fourth-color);
     border-radius: 10px;
 }
+.boton-api {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--main-first-color);
+  box-shadow: 5px -5px 3px rgb(194, 194, 194);
+  padding: 10px 300px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
 
 
 
