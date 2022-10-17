@@ -154,6 +154,36 @@ span {
       grid-area: contenedor_consejos;
     }
 
+    .contenedor_noticia {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      display: grid;
+
+  }
+
+  .noticia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "articulos"
+    grid-area: contenedor_noticia;
+  }
+
+  .noticia img {
+    max-width: 900px;
+  }
+
+  .noticia p {
+    text-align: justify;
+  }
+
+  .noticia h3, tr {
+    text-align: center;
+  }
+
 .newsletter {
       grid-area: newsletter; }
 
