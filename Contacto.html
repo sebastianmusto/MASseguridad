@@ -12,29 +12,29 @@
     <link href=https://fonts.google.com/specimen/Dosis rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
-    
+
     <title>Formulario</title>
 </head>
 
 <body>
-        <header class="header" id="idheader"></header>
+    <header class="header" id="idheader"></header>
 
-        <!--///////Formulario ///// /-->
-<div class="contenedor-contacto">
+    <!--///////Formulario ///// /-->
+    <div class="contenedor-contacto">
         <h2>Contacto</h2>
 
         <section class="contacto">
             <p>Contactenos por cualquier duda o consulta</p>
 
             <div>
-                <form class="contacto-form" action="">
+                <form name="fvalida" class="contacto-form" action="">
                     <label for="nombre">Nombre</label>
                     <br />
-                    <input type="text" id="nombre" placeholder="Ingresa tu nombre..." />
+                    <input type="text" id="nombre" maxlength="30" placeholder="Ingresa tu nombre..." />
                     <br />
                     <label for="apellido">Apellido</label>
                     <br />
-                    <input type="text" id="apellido" placeholder="Ingresa tu apellido..." />
+                    <input type="text" id="apellido" maxlength="30" placeholder="Ingresa tu apellido..." />
                     <br />
                     <label for="email">Correo electrónico</label>
                     <br />
@@ -42,25 +42,31 @@
                     <br />
                     <label for="telefono">Número de teléfono</label>
                     <br />
-                    <input type="number" id="telefono" placeholder="Ingresa tu número de teléfono" />
+                    <input type="text" id="telefono" placeholder="Ingresa tu número de teléfono" />
                     <br />
                     <label for="mensaje">Dejanos tu duda o consulta</label>
                     <br />
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea>
                     <br />
 
-                    <button class="boton-principal">Enviar</button>
+                    <!-- <button class="boton-principal">Enviar</button>
+                   <div class="center">
+                        <input type="submit" id="b1" name="btn" value="Enviar" onclick="validarEnviar()">
+                    </div> -->
+                    <input type="submit" class="boton-principal" id="b1" name="btn" value="Enviar"
+                        onclick="validarEnviar()">
                 </form>
             </div>
             <p>Colabora con nosotros para seguir mejorando!</p>
         </section>
-</div>
+    </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
 
 
-        <footer class="footer" id="idfooter"></footer>
+    <footer class="footer" id="idfooter"></footer>
     <!-- *****SCRIPTS***** -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
