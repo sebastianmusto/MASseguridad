@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---- FAVICON ---->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/e9dc93b347.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS -->
+    <link href=https://fonts.google.com/specimen/Dosis rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header class="header" id="idheader"></header>
+
+    <!--///////Formulario ///// /-->
+    <div class="contenedor-contacto">
+        <h2>Contacto</h2>
+
+        <section class="contacto">
+            <p>Contactenos por cualquier duda o consulta</p>
+
+            <div>
+                <form name="fvalida" class="contacto-form" action="">
+                    <label for="nombre">Nombre</label>
+                    <br />
+                    <input type="text" id="nombre" maxlength="30" placeholder="Ingresa tu nombre..." />
+                    <br />
+                    <label for="apellido">Apellido</label>
+                    <br />
+                    <input type="text" id="apellido" maxlength="30" placeholder="Ingresa tu apellido..." />
+                    <br />
+                    <label for="email">Correo electrónico</label>
+                    <br />
+                    <input type="email" id="email" placeholder="Ingresa tu correo electrónico" />
+                    <br />
+                    <label for="telefono">Número de teléfono</label>
+                    <br />
+                    <input type="text" id="telefono" placeholder="Ingresa tu número de teléfono" />
+                    <br />
+                    <label for="mensaje">Dejanos tu duda o consulta</label>
+                    <br />
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+                    <br />
+
+                    <!-- <button class="boton-principal">Enviar</button>
+                   <div class="center">
+                        <input type="submit" id="b1" name="btn" value="Enviar" onclick="validarEnviar()">
+                    </div> -->
+                    <input type="submit" class="boton-principal" id="b1" name="btn" value="Enviar"
+                        onclick="validarEnviar()">
+                </form>
+            </div>
+            <p>Colabora con nosotros para seguir mejorando!</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+
+
+    <footer class="footer" id="idfooter"></footer>
+    <!-- *****SCRIPTS***** -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
