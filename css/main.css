@@ -64,19 +64,21 @@ span {
 
   @media only screen and (min-width: 768px) {
     .contenedor {
+      margin: 0;
       width: 90%;
       max-width: 1100px;
       margin: 20px auto;
       display: grid;
       grid-auto-columns: 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr;
+      grid-template-rows: 0.1fr 0.4fr 0.4fr;
       gap: 0px 0px;
       grid-template-areas:
         "hero hero hero hero hero"
         "mision mision mision mision mision"
-        "categorias categorias categorias categorias categorias"
-;
+        "categorias categorias categorias categorias categorias";
+      padding-bottom: 50px;
+
     }
 
     .hero {
@@ -250,8 +252,9 @@ span {
 /*----HEADER----*/ /*-----NAVEGACION PRINCIPAL-----*/
 
 .header{
-
- /* border: 5px solid red; */
+ margin-bottom: 50px;
+ padding-bottom: 50px;
+ padding-top: 25px;
  width: 80%;
  display: flex;
  margin: auto;
@@ -422,7 +425,10 @@ ul.enlaces-menu a:last-child {
         padding-top: 25px;
         padding-bottom: 25px;
       }
-
+    .navegacion-principal p{
+      display: flex;
+      justify-content: center;
+    }
     .logo{
         padding-left:25px;}
 
@@ -476,11 +482,15 @@ ul.enlaces-menu a:last-child {
 
 .hero{
   display:grid;
-
-  background-color: rgb(237, 237, 237);
+  background-color: white;
   border-radius: 50px;
   margin: 5px;
   padding: 50px 0px 50px 0px;
+ }
+ .contenido-header{
+  border-color: grey;
+  max-width: 1100px;
+  max-height: 600px;
  }
 
 .contenido-header a {
@@ -517,8 +527,12 @@ div.imagen_principal {
     .mySlides {
       display: none;
     }
+    .contenido-header{ 
+      max-width: 1100px;
+      max-height: 600px;
+}
 
-    /* Next & previous buttons */
+/* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
       position: absolute;
@@ -696,14 +710,17 @@ ul.lista-categorias li:last-child {
 
 @media only screen and (min-width: 480px) {
   ul.lista-categorias li {
-      width: 50%;}
+      margin:auto;
+      justify-content: center;
+      margin:auto;
+      width: 100%;}
 }
 
 @media only screen and (min-width: 768px) {
   ul.lista-categorias li {
       width: 90%;
       align-items: center;
-      min-height: 50vh}
+      min-height: 30vh}
 }
 .categoria {
   position: relative;
@@ -1168,9 +1185,10 @@ form button:hover{
 
 /*:::::Pie de Pagina*/
 .pie-pagina{
+  display: inline-block;
   width: 100%;
   background-color:rgb(211, 211, 211);
-  margin: 30px 5px;
+  /* margin: 30px 5px; */
 }
 .pie-pagina .grupo-1{
   width: 100%;
