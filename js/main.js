@@ -23,7 +23,7 @@ document.getElementById("idheader").innerHTML = `
 </nav>
 `
 
-//FOOTER  > idfooter
+//FOOTER
 
 document.getElementById("idfooter").innerHTML = `
 <div class="pie-pagina">
@@ -128,56 +128,6 @@ function validarEnviar() {
     return 0;
   }
   if (document.fvalida.mensaje.value.length == 0) {
-    alert("Por favor dejanos tu mensaje")
-    document.fvalida.mensaje.focus()
-    return 0;
-  }
-  alert("Muchas gracias por contactarte con nosotros.Te responderemos a la brevedad")
-  document.fvalida.submit()
-}
-
-// automatic carousel
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 5000); // Change image every 5 seconds
-// } 
-function validarEnviar(){
-  if(document.fvalida.nombre.value.length ==0){
-    alert("Por favor escriba su nombre")
-    document.fvalida.nombre.focus()
-    return 0;
-  }
-  if(document.fvalida.apellido.value.length ==0){
-    alert("Por favor escriba su apellido")
-    document.fvalida.apellido.focus()
-    return 0;
-  }
-  if(document.fvalida.email.value.length ==0){
-    alert("Por favor escriba su correo")
-    document.fvalida.email.focus()
-    return 0;
-  }
-  if(document.fvalida.telefono.value.length ==0){
-    alert("Por favor escriba un telefono")
-    document.fvalida.telefono.focus()
-    return 0;
-  }
-  if(document.fvalida.nombre.value.length ==0){
-    alert("Por favor escriba un nombre")
-    document.fvalida.nombre.focus()
-    return 0;
-  }
-  if(document.fvalida.mensaje.value.length ==0){
     alert("Por favor dejanos tu mensaje")
     document.fvalida.mensaje.focus()
     return 0;
